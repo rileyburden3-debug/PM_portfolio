@@ -850,7 +850,7 @@
                 </div>
 
                 <p class="project-problem">
-                    <strong>The problem:</strong> [Project details coming soon]
+                    <strong>The problem:</strong> I wanted to experience what it feels like to build a full-stack application from scratch. The idea: a song battle app where users create accounts, invite friends, submit songs, vote blind, and watch results play out in a bracket animation. Simple enough to scope, complex enough to be real.
                 </p>
 
                 <a href="https://music-battle-royale-eta.vercel.app/home" target="_blank" class="demo-link">
@@ -864,10 +864,52 @@
 
                 <div class="expanded-details">
                     <div class="detail-section">
+                        <div class="detail-title">What I Built</div>
                         <div class="detail-content">
-                            <p>Details coming soon.</p>
+                            <ul>
+                                <li>Full-stack mobile web app (PWA) with Google and email authentication</li>
+                                <li>Battle creation, invite codes, lobby system, song submission, blind voting, bracket results</li>
+                                <li>Real-time leaderboard tracking points across battles</li>
+                                <li>Push notifications for invites and status changes</li>
+                                <li>iTunes API integration for song search with album art and previews</li>
+                                <li>Complete deployment pipeline: Vercel (frontend), Railway (backend + PostgreSQL)</li>
+                            </ul>
                         </div>
                     </div>
+
+                    <div class="detail-section">
+                        <div class="detail-title">How I Built It and What Surprised Me</div>
+                        <div class="detail-content">
+                            <p>I started with a Lean Canvas, then worked with Claude to write a structured PRD. That document became the north star for the entire build. The stack: React and TypeScript on the frontend, Node.js and Express on the backend, PostgreSQL for the database, Firebase for auth, and iTunes API for music search. What surprised me most wasn't the coding. It was the complexity of how everything connects. Deployment failures, debugging logs, understanding why a Railway build crashes, figuring out that a Tailwind string isn't valid CSS. These are what actually take time. Debugging is where the build becomes real.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <div class="detail-title">The PM Decisions That Mattered</div>
+                        <div class="detail-content">
+                            <ul>
+                                <li><strong>PRD as a living contract:</strong> The PRD gave Claude and me a shared understanding, but conceptual clarity and functional reality are different things. It got us 70% there; the other 30% only revealed itself during testing.</li>
+                                <li><strong>Chunking the work:</strong> Instead of one massive fix list or piecemeal debugging, I developed a pattern: surface everything broken, ask clarifying questions, chunk into manageable efforts before coding. This kept me tracking what was changing and why.</li>
+                                <li><strong>Real user testing exposed blind spots:</strong> Things that felt obvious to me as the builder confused actual users. That feedback loop was essential.</li>
+                                <li><strong>Claude as UAT tester:</strong> Running the full app through with Claude, getting a prioritized list of critical, medium, and minor issues with risk assessments. This was one of the most effective quality checks of the project.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <div class="detail-title">What I Would Do Differently</div>
+                        <div class="detail-content">
+                            <p>Start with the deployment environment in mind from day one, not just the local setup. I built on Supabase locally, then migrated to Railway's PostgreSQL for real users. It worked, but created unnecessary friction. Building directly on Railway from the start would have been smarter.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <div class="detail-title">What This Taught Me About Builder PM</div>
+                        <div class="detail-content">
+                            <p>Building a full production app from a blank page felt impossible three weeks ago. Now it's done, and people who've used it think it's fun. I understand why engineers think the way they do. I understand deployment pipelines from the inside. I understand why chunking, documentation, and clear requirements are key to ensuring build velocity. Most importantly, I have a clear appetite to keep building.</p>
+                        </div>
+                    </div>
+
                     <div class="project-links">
                         <a href="https://music-battle-royale-eta.vercel.app/home" target="_blank" class="project-link">Live App</a>
                         <a href="https://vercel.com/rileyburden3-debugs-projects/music-battle-royale" target="_blank" class="project-link">GitHub Repo</a>
